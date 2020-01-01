@@ -1,0 +1,8 @@
+eureka:
+  instance:
+    app: auth-service
+    hostname: localhost
+    vipAddress: com.eventmanager.authservice
+    statusPage: http://localhost:9456/info
+  client:
+    url: http://localhost:8478
