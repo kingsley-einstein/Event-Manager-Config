@@ -2,7 +2,8 @@ eureka:
   instance:
     app: auth-service
     hostname: localhost
-    vipAddress: com.eventmanager.authservice
+    vipAddress: auth-service
     statusPage: http://localhost:9456/info
+    healthCheck: http://localhost:9456/health
   client:
     url: http://localhost:8478
