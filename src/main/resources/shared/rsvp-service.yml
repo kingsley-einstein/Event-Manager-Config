@@ -3,7 +3,7 @@ eureka:
     app: rsvp-service
     hostname: localhost
     vipAddress: rsvp-service
-    statusPage: http://localhost:9456/info
-    healthCheck: http://localhost:9456/health
+    statusPage: http://localhost:3823/info
+    healthCheck: http://localhost:3823/health
   client:
     url: http://localhost:8478
