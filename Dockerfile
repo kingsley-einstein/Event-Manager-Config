@@ -1,5 +1,5 @@
 FROM maven:3.6.0-jdk-11-slim AS mavenBuild
-COPY src /app
+COPY src /app/src
 COPY pom.xml /app/pom.xml
 RUN mvn -f /app/pom.xml clean package -DskipTests
 
