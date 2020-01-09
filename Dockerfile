@@ -1,7 +1,6 @@
 FROM maven:3.6.0-jdk-11-slim As mavenBuild
-COPY src ./
+COPY src ./src
 COPY pom.xml ./
-WORKDIR /
 RUN mvn clean package -DskipTests
 COPY . .
 
