@@ -8,4 +8,4 @@ spring:
         git:
           uri: ${GIT_URI}
 encrypt:
-  key: ${ENC_SECRET}
+  key: ${ENCRYPTED_SECRET}
