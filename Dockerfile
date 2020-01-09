@@ -6,4 +6,4 @@ COPY . .
 
 FROM openjdk:11-jre-slim
 COPY --from=mavenBuild /target/Event-Manager-Config-0.0.1-SNAPSHOT.jar /base/app.jar
-ENTRYPOINT ["java", "-jar", "/base/app.jar", "-Dspring.profiles.active=prod", "-DPORT=80"]
+ENTRYPOINT ["java", "-jar", "-Dspring.profiles.active=prod", "-DPORT=80", "/base/app.jar"]
