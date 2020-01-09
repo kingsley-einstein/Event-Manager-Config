@@ -7,3 +7,5 @@ spring:
       server:
         git:
           uri: ${GIT_URI}
+encrypt:
+  key: ${ENC_SECRET}
